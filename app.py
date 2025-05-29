@@ -13,6 +13,6 @@ altura = st.number_input('Altura do ombro ao cotovelo (em cm)', min_value=0.0, s
 if st.button('Calcular ponto medial'):
     if nome and altura > 0:
         media = altura / 2
-        st.success(f'✅ Como {nome} tem {altura} cm de braço, o ponto medial é **{media:.1f} cm**.')
+        st.success(f'✅ Como {nome} tem {altura:.2f} cm de braço, o ponto medial é **{media:.2f} cm**.')
     else:
         st.error('⚠️ Preencha todos os campos corretamente.')
